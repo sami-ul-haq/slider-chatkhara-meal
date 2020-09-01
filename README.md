@@ -1,2 +1,4 @@
-# slider-chatkhara-meal
+# Full Screen Slider
 slider for chatkhara meal
+
+### 
