@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLider</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9e2213edf0.js" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Slider Starts -->
+    <div class="slider">
+
+        <div class="my-slider">
+            
+            <div><img src="./assets/bakery-items.jpg"></div>
+            <div><img src="./assets/fast-food.jpg"></div>
+            <div><img src="./assets/snacks.jpg"></div>
+            <div><img src="./assets/spicy-food.jpg"></div>
+            
+        </div>
+
+        <button class="slider-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-arrow-right"></i></button>
+
+    </div>
+    <!-- Slider Ends -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>	
+    
+    <script>
+        $(document).ready(function () {
+            $('.my-slider').slick({
+                autoplay:true,
+                slidesToShow:1,
+                slidesToScroll:1,
+                prevArrow:'.prev-btn',
+                nextArrow:'.next-btn',
+                speed:1000
+            });
+        });
+    </script>
+
+</body>
+</html>
