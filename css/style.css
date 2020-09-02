@@ -29,6 +29,7 @@
     color: #FFFFFF;
     background-color: #FF6600;
     position: absolute;
+    top:50%
 }
 
 .slider-btn:hover{
@@ -37,10 +38,26 @@
 
 .prev-btn{
     left: 5%;
-    top: 50%;
 }
 
 .next-btn{
     right: 5%;
-    top: 50%;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (max-width:768px){
+    .slider-btn{
+        top: 35%;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .slider-btn{
+        top: 25%;
+        width: 20px;
+        height: 25px;
+    }
 }
