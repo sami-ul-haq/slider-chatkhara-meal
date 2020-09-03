@@ -19,12 +19,33 @@
 
         <div class="my-slider">
             
-            <div><img src="./assets/bakery-items.jpg"></div>
-            <div><img src="./assets/fast-food.jpg"></div>
-            <div><img src="./assets/snacks.jpg"></div>
-            <div><img src="./assets/spicy-food.jpg"></div>
+            <div class="slider-content">
+                <img src="./assets/bakery-items.jpg">
+                <div class="slider-desc">
+                    <h1>Rock Your Whole Mouth !!</h1>
+                </div>
+
+            </div>
+
+            <div class="slider-content">
+                <img src="./assets/fast-food.jpg">
+                <div class="slider-desc">
+                    <h1>Rock Your Whole Mouth !!</h1>
+                </div>
+            </div>
+            
+            <div class="slider-content">
+                <img src="./assets/snacks.jpg">
+                <div class="slider-desc">
+                    <h1>Taste to Chatkhara Hi Chalega</h1>
+                </div>
+            </div>
             
         </div>
+
+        <!-- <div class="slider-desc">
+            <h1>Rock Your Whole Mouth !!</h1>
+        </div> -->
 
         <button class="slider-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
         <button class="slider-btn next-btn"><i class="fas fa-arrow-right"></i></button>
@@ -45,7 +66,7 @@
                 slidesToScroll:1,
                 prevArrow:'.prev-btn',
                 nextArrow:'.next-btn',
-                speed:1000
+                speed:1000,
             });
         });
     </script>
